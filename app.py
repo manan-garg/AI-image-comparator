@@ -46,7 +46,7 @@ def generate(hf_api_key, prompt):
 with gr.Blocks() as demo:
     gr.Markdown("# AI Image Comparator")
     with gr.Row():
-        hf_api_key = gr.Textbox(label="API Key")
+        hf_api_key = gr.Textbox(label="Hugging Face API Key")
     with gr.Row():
         with gr.Column(scale=4):
             prompt = gr.Textbox(label="Your prompt to generate image") #Give prompt some real estate
